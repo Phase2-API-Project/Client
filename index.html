@@ -133,13 +133,8 @@
     <!-- END REGISTER FORM -------------------------------------------------------------------------------------------------------  -->
 
 
-
-
-
-
-
     <!-- MAIN PAGE -------------------------------------------------------------------------------------------------------  -->
-    <div id="main">
+    <div id="MAIN">
         <div class="big ui red animated button" tabindex="0">
             <div class="visible content">Find Doctor</div>
             <div class="hidden content">
@@ -151,15 +146,66 @@
 
 
     <!-- SEARCH PAGE -------------------------------------------------------------------------------------------------------  -->
-    <div id="findDoctor">
-        <div class="big ui red animated button" tabindex="0">
-            <div class="visible content">Find Doctor</div>
-            <div class="hidden content">
-                <i class="right arrow icon"></i>
+    <div id="FINDDOCTOR">
+        <h1 style="color: teal; background-color: white;"> MATCH YOUR DOCTOR </h1>
+        <br>
+        <br>
+        <div class="ui form" style="margin: 20px;">
+            <div class="fields">
+                <div class="field">
+                    <label>Location : </label>
+                    <input type="text" name="location" placeholder="Location..">
+                </div>
+                <div class="field">
+                    <label>Speciality : </label>
+                    <input type="text" name="speciality" placeholder="Speciality..">
+                </div>
+                <div class="field">
+                    <label>Gender</label>
+                    <select class="ui fluid search dropdown" name="gender">
+                        <option value="male" id="male">Male</option>
+                        <option value="female" id="female">Female</option>
+                    </select>
+                </div>
+                <div class="field btnDoc">
+                    <button id="findDoctor" class="ui button" type="submit"><i class="search icon"></i></button>
+                </div>
             </div>
         </div>
     </div>
     <!-- SEARCH PAGE ------------------------------------------------------------------------------------------------------- -->
+
+    <!-- DOCTOR PAGE -------------------------------------------------------------------------------------------------------  -->
+    <div id="DOCTORS">
+        <h1 style="color: teal; background-color: white; top: 10px;">HERE THEY ARE</h1>
+        <br>
+        <div id="doctors">
+            <div class="ui card" style=" width:200px">
+                <div class="image">
+                    <img src="/images/avatar2/large/kristy.png">
+                </div>
+                <div class="content" style=" height:100px">
+                    <a class="header" style=" width:200px">FIRSTNAME LASTNAME TITLE</a>
+                    <div class="meta">
+                        <span class="phone">GENDER</span>
+                    </div>
+                    <div class="meta">
+                        <span class="phone">PHONE NUMBER</span>
+                    </div>
+                    <div class="description" name="address">
+                        address.......
+                    </div>
+                    <div class="description" name="bio">
+                        bio ..........
+                    </div>
+                </div>
+                <div class="extra content">
+                    SPECIALITIES
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- DOCTOR PAGE ------------------------------------------------------------------------------------------------------- -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
