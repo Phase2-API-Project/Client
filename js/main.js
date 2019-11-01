@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d8edf11af468eedcd2f8633d7cb728af3b4eb26e
 $('document').ready(function () {
 
     if (localStorage.getItem('token')) {
@@ -8,9 +11,13 @@ $('document').ready(function () {
     $('#REGISTER').hide()
     $('#NAVBAR').hide()
     $('#logout-button').hide()
+<<<<<<< HEAD
     $('#MAIN').hide()
     $('#FINDDOCTOR').hide()
     $('#DOCTORS').hide()
+=======
+    $('#MAINPAGE').hide()
+>>>>>>> d8edf11af468eedcd2f8633d7cb728af3b4eb26e
     }
 
     $('#register-page').click(registerShow)
@@ -18,8 +25,12 @@ $('document').ready(function () {
     $('#button-login').click(login)
     $('#logout-button').click(logout)
     $('#button-register').click(register)
+<<<<<<< HEAD
     $('#finddoctor-btn').click(findDoctor)
     $('#search-doctor').click(findDoctorForm)
+=======
+    
+>>>>>>> d8edf11af468eedcd2f8633d7cb728af3b4eb26e
 })
 
 function registerShow () {
@@ -37,7 +48,11 @@ $('#REGISTER').slideDown(800, function () {
 })
 }
 
+<<<<<<< HEAD
 function login () {
+=======
+function login () {panda
+>>>>>>> d8edf11af468eedcd2f8633d7cb728af3b4eb26e
 
 event.preventDefault()
 const email = $('#email-login').val()
@@ -49,13 +64,20 @@ $.ajax({
         data: { email, password }
     })
     .done(response => {
+<<<<<<< HEAD
         $('#FINDDOCTOR').hide()
         $('#DOCTORS').hide()
+=======
+>>>>>>> d8edf11af468eedcd2f8633d7cb728af3b4eb26e
         $('#LOGIN').slideToggle(1000, function () {
             $('#NAVBAR').show(800, function () {
                 $('#logout-button').show(1000,function () {
                      localStorage.setItem('token', response.token)
+<<<<<<< HEAD
                     $('#MAIN').show('slow')
+=======
+                    $('#MAINPAGE').show('slow')
+>>>>>>> d8edf11af468eedcd2f8633d7cb728af3b4eb26e
                 })
             })
 
