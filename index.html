@@ -7,14 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id"
-        content="992675398224-933o23nnmp85vdch2t0ftnta6jcbn3ut.apps.googleusercontent.com">
+        content="277366525164-1kg2ssjsuk3hp86trsn5mqgvibbaru41.apps.googleusercontent.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>STUN</title>
 </head>
 
@@ -126,30 +125,65 @@
         </div>
     </div>
 
-
- 
     <!-- MAIN PAGE -------------------------------------------------------------------------------------------------------  -->
-    <div id="main">
+    <div id="MAIN">
+        <div id="finddoctor-btn">
         <div class="big ui red animated button" tabindex="0">
-            <div class="visible content">Find Doctor</div>
+            <div class="visible content" >Find Doctor</div>
             <div class="hidden content">
                 <i class="right arrow icon"></i>
             </div>
+        </div>
         </div>
     </div>
     <!-- END MAIN PAGE ------------------------------------------------------------------------------------------------------- -->
 
-
     <!-- SEARCH PAGE -------------------------------------------------------------------------------------------------------  -->
-    <div id="findDoctor">
-        <div class="big ui red animated button" tabindex="0">
-            <div class="visible content">Find Doctor</div>
-            <div class="hidden content">
-                <i class="right arrow icon"></i>
+    <div id="FINDDOCTOR">
+            <h1 style="color: teal; background-color: white;"> MATCH YOUR DOCTOR </h1>
+            <br>
+            <br>
+            <div class="ui form" style="margin: 20px;">
+                <div class="fields">
+                    <div class="field">
+                        <label>Location : </label>
+                        <input type="text" placeholder="Location.." id="add-location">
+                    </div>
+                    <div class="field">
+                        <label>Speciality : </label>
+                        <input type="text" name="speciality" placeholder="Speciality.." id="add-spesiality">
+                    </div>
+                    <div class="field">
+                        <label>Gender</label>
+                        <select class="ui fluid search dropdown" name="gender" id="add-gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="field btnDoc">
+                        <button class="ui button" type="submit" id="search-doctor"><i class="search icon"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- SEARCH PAGE ------------------------------------------------------------------------------------------------------- -->
+        <!-- SEARCH PAGE ------------------------------------------------------------------------------------------------------- -->
+    
+
+        
+        <!-- DOCTOR PAGE -------------------------------------------------------------------------------------------------------  -->
+        <div id="DOCTORS">
+            <h1 style="color: teal; background-color: white; top: 10px;">HERE THEY ARE</h1>
+            <br>
+            <div id="doctors-list">
+                
+            </div>
+        </div>
+        <!-- DOCTOR PAGE ------------------------------------------------------------------------------------------------------- -->
+    
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
